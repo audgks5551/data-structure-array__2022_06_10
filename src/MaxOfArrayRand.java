@@ -1,14 +1,13 @@
 import java.util.Random;
-import java.util.Scanner;
 
 public class MaxOfArrayRand {
     public static void main(String[] args) {
         Random rand = new Random();
-        Scanner stdIn = new Scanner(System.in);
 
         System.out.println("키의 최댓갑을 구합니다.");
         System.out.print("사람 수: ");
-        int num = stdIn.nextInt();
+        int num = 1 + rand.nextInt(9);
+        System.out.println(num);
 
         int[] height = new int[num];
 
